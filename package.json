@@ -2,7 +2,7 @@
   "name": "theAgenda",
   "version": "0.0.1",
   "description": "Intelligent time management at your fingertips",
-  "main": "Gulpfile.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "gulp test"
   },

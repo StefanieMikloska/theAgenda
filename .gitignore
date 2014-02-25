@@ -32,3 +32,6 @@ build
 .grunt
 
 node_modules
+
+# Application
+client/vendor

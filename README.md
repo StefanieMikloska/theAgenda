@@ -38,10 +38,6 @@ are a few key ones (that don't exist yet but will soon):
  	watching for changes
 
 
-## Contributing
-
-See [CONTRIBUTING.md](/StefanieMikloska/theAgenda/blob/master/CONTRIBUTING.md)
-
 ## Authors
 
 @StefanieMikloska and @nfrasser!

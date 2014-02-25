@@ -9,24 +9,28 @@ Intelligent task-management at your fingertips. Work in Progress.
 
 ### Client setup
 
-All commands are executed in the terminal.
+Make sure NodeJS is installed. On the OSX terminal, you can install it via Homebrew:
 
-1. Make sure NodeJS is installed. On OSX, you can install it via Homebrew:
 ```sh
 brew install node
 ```
-2. Make sure Bower (for front-end package management) and Gulp (build and
+
+Make sure Bower (for front-end package management) and Gulp (build and
 test tasks for development) are installed. You can do this with NPM:
+
 ```sh
 npm install -g bower
 npm install -g gulp
 ```
-3. From the root folder of this directory, install the Node and Bower
+
+From the root folder of this directory, install the Node and Bower
 dependencies:
+
 ```sh
 npm install && bower install
 ```
-4. Run a Gulp task. See `gulpfile.js` to view all available tasks. Here
+
+Run a Gulp task. See `gulpfile.js` to view all available tasks. Here
 are a few key ones (that don't exist yet but will soon):
 
  - `test` - Run the full client-side integration test suite

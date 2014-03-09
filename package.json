@@ -28,19 +28,19 @@
   },
   "homepage": "https://github.com/StefanieMikloska/theAgenda",
   "devDependencies": {
-    "gulp": "3.5.*",
-    "gulp-es6-module-transpiler": "0.1.*",
-    "gulp-header": "1.0.*",
-    "gulp-jshint": "1.5.*",
-    "gulp-watch": "0.5.*",
-    "gulp-livereload": "1.1.*",
-    "gulp-notify": "1.0.*",
-    "gulp-open": "0.2.*",
-    "gulp-beautify": "1.0.*",
-    "gulp-qunit": "0.2.*",
-    "gulp-yuidoc": "0.1.*",
-    "gulp-ember-handlebars": "0.5.*",
-    "gulp-istanbul": "0.1.*",
-    "gulp-less": "1.2.*1"
+    "gulp": "3.5.x",
+    "gulp-es6-module-transpiler": "0.1.x",
+    "gulp-header": "1.0.x",
+    "gulp-jshint": "1.5.x",
+    "gulp-watch": "0.5.x",
+    "gulp-livereload": "1.1.x",
+    "gulp-notify": "1.0.x",
+    "gulp-open": "0.2.x",
+    "gulp-beautify": "1.0.x",
+    "gulp-qunit": "0.2.x",
+    "gulp-yuidoc": "0.1.x",
+    "gulp-ember-handlebars": "0.5.x",
+    "gulp-istanbul": "0.1.x",
+    "gulp-sass": "^0.7.1"
   }
 }

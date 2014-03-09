@@ -32,7 +32,8 @@
     "jquery": "1.11.*",
     "ember": "1.4.*",
     "ember-data": "1.0.0-beta.7",
-    "moment": "2.*"
+    "moment": "2.*",
+    "requirejs": "https://github.com/jrburke/requirejs.git#~2.1.11"
   },
   "devDependencies": {
     "qunit": "1.14.*"

@@ -41,6 +41,7 @@
     "gulp-yuidoc": "0.1.x",
     "gulp-ember-handlebars": "0.5.x",
     "gulp-istanbul": "0.1.x",
-    "gulp-sass": "^0.7.1"
+    "gulp-sass": "^0.7.1",
+    "gulp-concat": "^2.1.7"
   }
 }

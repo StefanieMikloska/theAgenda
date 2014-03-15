@@ -1,13 +1,16 @@
 <div class="app container">
   <div class="row">
-    <div class="columns medium-6">
-      The Agenda
+    <div class="medium-6 columns">
+      <h1>{{link-to "The Agenda" "index"}}</h1>
     </div>
-    <div class="columns medium-6">
-      {{link-to "Home" "index" class="button"}}
-      {{link-to "Courses" "courses" class="button"}}
-      {{link-to "Todo" "todos" class="button"}}
-      {{link-to "Settings" "settings" class="button"}}
+    <div class="medium-6 columns">
+      <ul class="button-group">
+        <li>{{link-to "Courses" "courses" class="button"}}</li>
+        <li>{{link-to "Todo" "todos" class="button"}}</li>
+        <li>{{link-to "Settings" "settings" class="button"}}</li>
     </div>
   </div> 
+  <div class="row">
+    {{outlet}}
+  </div>
 </div>

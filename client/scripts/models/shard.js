@@ -1,6 +1,5 @@
 /**
-  @module agenda
-  @submodule models
+  @module models
 */
 /**
   Shards could be anything from questions on math assignments, to paragraphs

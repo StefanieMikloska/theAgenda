@@ -1,6 +1,5 @@
 /**
-  @module agenda
-  @submodule models
+  @module models
 */
 /**
   A syllabus item is anything that factors into passing the course.

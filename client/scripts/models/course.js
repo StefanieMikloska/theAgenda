@@ -1,6 +1,5 @@
 /**
-  @module agenda
-  @submodule models
+  @module models
 */
 /**
   A course with many syllabus items

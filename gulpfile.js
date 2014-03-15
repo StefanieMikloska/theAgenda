@@ -18,7 +18,7 @@ gulp.task('scripts', function () {
 
   // Transpile all JavaScripts into the build folder
   return gulp.src(paths.scripts)
-    .pipe(changed(paths.build))
+    //.pipe(changed(paths.build))
     .pipe(transpiler({
       type: 'amd'
     }))

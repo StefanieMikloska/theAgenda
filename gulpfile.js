@@ -40,6 +40,8 @@ gulp.task('watch', function () {
   gulp.watch(paths.templates, ['templates']);
 });
 
-gulp.task('default', function () {
-  // place code for your default task here
-});
+gulp.task('default', [
+  'scripts',
+  'templates',
+  'watch'
+]);

@@ -12,13 +12,14 @@ var transpiler = require('gulp-es6-module-transpiler'),
   sass = require('gulp-sass'),
   concat = require('gulp-concat'),
   handlebars = require('gulp-ember-handlebars'),
-  changed = require('gulp-changed');
+  changed = require('gulp-changed'),
+  livereload = require('gulp-livereload');
 
 gulp.task('scripts', function () {
 
   // Transpile all JavaScripts into the build folder
   return gulp.src(paths.scripts)
-    //.pipe(changed(paths.build))
+    .pipe(changed(paths.build))
     .pipe(transpiler({
       type: 'amd'
     }))
@@ -36,8 +37,16 @@ gulp.task('templates', function () {
 });
 
 gulp.task('watch', function () {
+
+  var server = livereload();
+
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.templates, ['templates']);
+
+  gulp.watch(paths.build + '**').on('change', function (file) {
+    server.changed(file.path);
+  });
+
 });
 
 gulp.task('default', [

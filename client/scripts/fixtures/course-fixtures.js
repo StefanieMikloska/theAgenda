@@ -1,3 +1,6 @@
+/**
+  @module fixtures
+*/
 // Course fixtures
 var FIXTURES = [{
   id: 1,

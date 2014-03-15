@@ -1,6 +1,8 @@
 /**
   @module models
 */
+import FIXTURES from "fixtures/course-fixtures";
+
 /**
   A course with many syllabus items
 
@@ -38,5 +40,7 @@ var Course = DS.Model.extend({
   items: DS.hasMany('syllabusItem')
 
 });
+
+Course.FIXTURES = FIXTURES;
 
 export default Course;

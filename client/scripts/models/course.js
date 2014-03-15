@@ -1,6 +1,7 @@
 /**
   @module models
 */
+
 import FIXTURES from "fixtures/course-fixtures";
 
 /**

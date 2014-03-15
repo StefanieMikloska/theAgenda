@@ -1,6 +1,9 @@
 /**
   @module models
 */
+
+import FIXTURES from "fixtures/syllabus-item-fixtures";
+
 /**
   A syllabus item is anything that factors into passing the course.
   That includes any assignments, essays, quizzes, and final exams that count
@@ -69,5 +72,7 @@ var SyllabusItem = DS.Model.extend({
   shards: DS.hasMany('shard')
 
 });
+
+SyllabusItem.FIXTURES = FIXTURES;
 
 export default SyllabusItem;

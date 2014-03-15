@@ -1,6 +1,9 @@
 /**
   @module models
 */
+
+import FIXTURES from "fixtures/shard-fixtures";
+
 /**
   Shards could be anything from questions on math assignments, to paragraphs
   on essays, to topics of study on an exam. They're the minimum viable portion
@@ -40,5 +43,7 @@ var Shard = DS.Model.extend({
   syllabusItem: DS.belongsTo('syllabusItem')
 
 });
+
+Shard.FIXTURES = FIXTURES;
 
 export default Shard;

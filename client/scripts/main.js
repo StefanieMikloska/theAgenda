@@ -24,4 +24,7 @@ App.ApplicationAdapter = ApplicationAdapter;
 App.CourseController = CourseController;
 App.CoursesController = CoursesController;
 
+// Add to window for easier debugging
+window.App = App;
+
 export default App;

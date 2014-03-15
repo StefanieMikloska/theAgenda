@@ -6,27 +6,22 @@ var FIXTURES = [{
   id: 1,
   title: 'Foundations of Sequential Programming',
   code: 'CS 241',
-  items: [1, 2, 3]
+  items: [1, 2, 3, 4, 5]
 }, {
   id: 2,
-  title: 'Data Structures & Data Mgmt',
+  title: 'Data Structures & Data Management',
   code: 'CS 240',
-  items: [4, 5, 6]
+  items: [6, 7]
 }, {
   id: 3,
-  title: 'Foundations of Sequential Programming',
-  code: 'CS 241',
-  items: [7, 8, 9]
+  title: 'Statistics',
+  code: 'STAT 231',
+  items: [8, 9, 10, 11]
 }, {
   id: 4,
-  title: 'Foundations of Sequential Programming',
-  code: 'CS 241',
-  items: [10, 11, 12]
-}, {
-  id: 5,
-  title: 'Foundations of Sequential Programming',
-  code: 'CS 241',
-  items: [13, 15, 15]
+  title: 'Combinatorics & Graph Theory',
+  code: 'MATH 239',
+  items: [12, 13, 14, 15, 16, 17]
 }];
 
 export default FIXTURES;

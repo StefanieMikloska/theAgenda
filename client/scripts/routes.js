@@ -6,12 +6,12 @@ var routes = function () {
       path: '/:course_id'
     }, function () {
 
-      this.resource('courseItems', {
+      this.resource('syllabusItems', {
         path: '/syllabus'
       }, function () {
 
-        this.resource('courseItem', {
-          path: '/course_item_id'
+        this.resource('syllabusItem', {
+          path: '/:syllabus_item_id'
         }, function () {});
 
       });

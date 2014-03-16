@@ -1,6 +1,15 @@
 <div class="medium-3 columns">
-  {{#each itemViewClass="course"}}
-    {{name}}
+  <h3>
+    Courses<br>
+    <small>&nbsp;</small>
+  </h3>
+  <hr>
+  {{#each }}
+    {{#link-to "syllabusItems" this}}
+      <h4 class="subheader">{{code}}</h4>
+      <p>{{title}}</p>
+    {{/link-to}}
+    <hr>
   {{/each}}
 </div>
 {{outlet}}

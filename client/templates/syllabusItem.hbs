@@ -1,0 +1,10 @@
+<div class="medium-6 columns">
+  <h2>{{title}}</h2>
+  <h3 class="subheader">{{description}}</h3>
+  <p><small>Due: {{due}}. Worth {{weight}} of final grade</small></p>
+  <hr>
+  {{#each shards}}
+    <h4>{{name}} <small>~ {{time}} min</small><h4>
+    <hr>
+  {{/each}}
+</div>

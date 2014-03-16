@@ -69,7 +69,9 @@ var SyllabusItem = DS.Model.extend({
     @type Ember.ComputedProperty|Array
     @default []
   */
-  shards: DS.hasMany('shard')
+  shards: DS.hasMany('shard', {
+    async: true
+  })
 
 });
 

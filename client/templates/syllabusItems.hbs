@@ -1,0 +1,14 @@
+<div class="medium-3 columns">
+  <h3>
+    Syllabus<br>
+    <small>For {{course.code}}</small>
+  </h3>
+  <hr>
+  {{#each item in controller}}
+    {{#link-to "syllabusItem" item}}
+      <p>{{title}}</p>
+    {{/link-to}}
+    <hr>
+  {{/each}}
+</div>
+{{outlet}}

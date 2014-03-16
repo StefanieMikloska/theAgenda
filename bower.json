@@ -1,0 +1,41 @@
+{
+  "name": "theAgenda",
+  "version": "0.0.1",
+  "homepage": "https://github.com/StefanieMikloska/theAgenda",
+  "authors": [
+    "StefanieMikloska",
+    "nfrasser"
+  ],
+  "description": "Intelligent task management at your fingertips",
+  "main": "gulpfile.js",
+  "keywords": [
+    "agenda",
+    "planning",
+    "schedule",
+    "task",
+    "grade",
+    "academic",
+    "todo",
+    "to-do",
+    "list"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.*",
+    "ember": "1.4.*",
+    "ember-data": "1.0.0-beta.7",
+    "moment": "2.*",
+    "requirejs": "https://github.com/jrburke/requirejs.git#~2.1.11"
+  },
+  "devDependencies": {
+    "qunit": "1.14.*"
+  }
+}

@@ -21,7 +21,7 @@ var ApplicationAdapter = DS.FixtureAdapter.extend({
     @param {Hash} query
     @return {Array} fixtures
   */
-  queryFixtures: function (fixtures, query/*, type*/) {
+  queryFixtures: function (fixtures, query) {
 
     fixtures = fixtures.filter(function (fixture) {
 

@@ -13,7 +13,7 @@ var transpiler = require('gulp-es6-module-transpiler'),
   concat = require('gulp-concat'),
   handlebars = require('gulp-ember-handlebars'),
   changed = require('gulp-changed'),
-  livereload = require('gulp-livereload');
+  connect = require('gulp-connect');
 
 gulp.task('scripts', function () {
 
@@ -23,7 +23,8 @@ gulp.task('scripts', function () {
     .pipe(transpiler({
       type: 'amd'
     }))
-    .pipe(gulp.dest(paths.build));
+    .pipe(gulp.dest(paths.build))
+    .pipe(connect.reload());
 
 });
 
@@ -33,23 +34,26 @@ gulp.task('templates', function () {
       outputType: 'browser'
     }))
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest(paths.build));
+    .pipe(gulp.dest(paths.build))
+    .pipe(connect.reload());
 });
 
+gulp.task('connect', connect.server({
+  root: ['client'],
+  port: 8080,
+  livereload: true,
+  open: {
+    browser: 'Google Chrome'
+  }
+}));
+
 gulp.task('watch', function () {
-
-  var server = livereload();
-
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.templates, ['templates']);
-
-  gulp.watch(paths.build + '**').on('change', function (file) {
-    server.changed(file.path);
-  });
-
 });
 
 gulp.task('default', [
+  'connect',
   'scripts',
   'templates',
   'watch'

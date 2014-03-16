@@ -33,7 +33,6 @@
     "gulp-header": "1.0.x",
     "gulp-jshint": "1.5.x",
     "gulp-watch": "0.5.x",
-    "gulp-livereload": "^1.2.0",
     "gulp-notify": "1.0.x",
     "gulp-open": "0.2.x",
     "gulp-beautify": "1.0.x",
@@ -43,6 +42,7 @@
     "gulp-istanbul": "0.1.x",
     "gulp-sass": "^0.7.1",
     "gulp-concat": "^2.1.7",
-    "gulp-changed": "^0.2.1"
+    "gulp-changed": "^0.2.1",
+    "gulp-connect": "^1.0.7"
   }
 }

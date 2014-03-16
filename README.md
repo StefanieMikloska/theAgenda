@@ -48,7 +48,7 @@ are a few key ones (most of which don't exist but will soon!):
  - `dist` - Builds and minifies scripts, templates, and stylesheets for
  	production
  
-
+Check out [gulp.js](http://gulpjs.com/) to learn more.
 
 ## Authors
 

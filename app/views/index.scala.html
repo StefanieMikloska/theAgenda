@@ -1,0 +1,35 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <form action="@routes.Application.create()" method="Post" >
+    	<table>
+    		<tr>
+    			<td>
+    				Task Name:
+    			</td>
+    			<td>
+    				<input type="text" name="name"></input>
+    		    </td>
+            </tr>
+            <tr>
+            	<td>
+                    Start Date:
+                </td>
+                <td>
+                	<input type="date" name="start"></input>
+                </td>
+            </tr>
+            <tr>
+            	<td>
+            		End Date:
+            	</td>
+            	<td>
+            		<input type="date" name="end"></input>
+                </td>
+            </tr>
+        </table>
+        <input type="submit"></input>
+    </form>
+
+}

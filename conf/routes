@@ -5,7 +5,8 @@
 # Home page
 GET     /theAgenda                          controllers.Application.index()
 POST    /theAgenda/tasks                    controllers.Application.create()
-GET     /theAgenda/tasks    				controllers.Application.showTasks()
+GET     /theAgenda/tasks					controllers.Application.getTasks()
+GET     /theAgenda/tasks/:id    			controllers.Application.getTask(id: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

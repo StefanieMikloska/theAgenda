@@ -8,10 +8,10 @@ import javax.persistence.Id;
 import java.util.Date;
 
 @Entity
-public class Task extends Model {
+public class User extends Model {
 
 	@Id
-	public int id;
+	public String id;
 
 	public String name; 
 

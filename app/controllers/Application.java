@@ -23,9 +23,17 @@ public class Application extends Controller {
     	return redirect(routes.Application.index()); 
     }
 
-    public static Result showTasks() {
-    	List<Task> ts = new Model.Finder(String.class, Task.class).all();
+    public static Result getTasks() {
+    	List<Task> ts = new Model.Finder(int.class, Task.class).all();
     	return ok(Json.toJson(ts)); 
+    }
+    public static Result getTask(int id) {
+        if (new Model.Finder(int.class, Task.class).byId(id) == null) {
+            String sorry = "Sorry Does Not Exsist";
+            return ok(Json.toJson(sorry));
+        } else {
+            return ok(Json.toJson(new Model.Finder(int.class, Task.class).byId(id)));
+        }
     }
 
 }
